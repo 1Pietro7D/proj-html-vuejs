@@ -1,28 +1,45 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HeaderComp />
+    <MainComp />
+
+    <FooterComp />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderComp from "@/components/HeaderComp.vue";
+import MainComp from "@/components/MainComp.vue";
+import FooterComp from "@/components/FooterComp.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    HeaderComp,
+    MainComp,
+    FooterComp,
+  },
+  data() {
+    return {};
+  },
+  created() {},
+
+  computed: {},
+  methods: {},
+  mounted() {},
+};
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import "@/assets/style/import.scss";
 </style>
+
+<!--
+
+@import "@/assets/style/generics.scss";
+@import "@/assets/style/position.scss"; 
+@import "@/assets/style/flex.scss";
+@import "@/assets/style/grid.scss"; 
+
+@import "@/assets/style/variables.scss";  !! this must be inserted into each component !!
+-->
