@@ -21,8 +21,8 @@
 </template>
 
 <script>
-import { navUtent } from "@/data.js";
-import { navApp } from "@/data.js";
+import { navUtent, navApp } from "@/data.js";
+
 import Nav_comp from "./Nav_comp.vue";
 export default {
   name: "HeaderComp",
