@@ -2,7 +2,9 @@
   <nav>
     <ul class="d_flex gap_1">
       <li v-for="element in listLink" :key="element">
-        <a :href="element.href">{{ element.label }}</a>
+        <a :href="element.href" :class="{ txWhite: txWhite == true }">{{
+          element.label
+        }}</a>
       </li>
     </ul>
   </nav>
@@ -13,15 +15,18 @@ export default {
   name: "Nav_comp",
   props: {
     listLink: Array,
+    txWhite: Boolean,
   },
 };
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/style/variables.scss";
-
 a {
   text-decoration: none;
   color: black;
+  text-transform: uppercase;
+  &.txWhite {
+    color: white;
+  }
 }
 </style>
