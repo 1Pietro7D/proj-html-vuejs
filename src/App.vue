@@ -2,7 +2,6 @@
   <div id="app">
     <HeaderComp />
     <MainComp />
-
     <FooterComp />
   </div>
 </template>
@@ -31,11 +30,11 @@ export default {
 </script>
 
 <style lang="scss">
-@import "@/assets/style/import.scss";
-@import "@/assets/style/generics.scss";
-@import "@/assets/style/position.scss";
-@import "@/assets/style/flex.scss";
-@import "@/assets/style/grid.scss";
+@import "@/assets/style/style.scss";
+.max-container {
+  max-width: 1200px;
+  margin: auto;
+}
 </style>
 
 <!--
