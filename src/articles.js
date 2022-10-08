@@ -6,6 +6,7 @@ export const post = [
     date: "12/01/2022 14:15:59",
     categories: ["photografy", "travel"],
     title: "Simple Ways to Have a Pretty Face",
+    status: "popular",
     article:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsum modi similique, officiis dolor id blanditiis fuga mollitia nisi, iste numquam doloremque recusandae omnis libero reiciendis vero quis accusantium necessitatibus!",
     comments: [
