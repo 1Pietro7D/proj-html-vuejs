@@ -1,8 +1,8 @@
 <template>
   <nav>
     <ul class="d_flex gap_1">
-      <li v-for="x in listLink" :key="x">
-        <a :href="x.href">{{ x.label }}</a>
+      <li v-for="element in listLink" :key="element">
+        <a :href="element.href">{{ element.label }}</a>
       </li>
     </ul>
   </nav>
