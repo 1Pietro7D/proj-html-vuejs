@@ -57,7 +57,7 @@ export const navApp = [
     href: "#",
   },
 ];
-export const categoryList = [
+export const categoriesList = [
   "gadgets",
   "photografhy",
   "lifestyle",
