@@ -57,4 +57,18 @@ export const navApp = [
     href: "#",
   },
 ];
-export const categoryList = [];
+export const categoryList = [
+  "gadgets",
+  "photografhy",
+  "lifestyle",
+  "fashion",
+  "recipes",
+  "travel",
+  "business",
+  "architecture",
+  "reviews",
+  "sports",
+  "videos",
+  "technology",
+  "design",
+];
