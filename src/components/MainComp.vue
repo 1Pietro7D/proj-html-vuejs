@@ -1,10 +1,8 @@
 <template>
   <main>
     <section class="blog_grid">
-      <div class="max-container">
-        <div v-for="(x, index) in gridBlogElement" :key="index">
-          <p>{{ x.title }}</p>
-        </div>
+      <div class="max-container grid_col_3">
+        <CardsComp v-for="x in gridBlogElement" :key="x.id" v-bind="x" />
       </div>
     </section>
   </main>
@@ -13,6 +11,7 @@
 <script>
 import { post } from "@/articles.js";
 import { categoriesList } from "@/data.js";
+import CardsComp from "./CardsComp.vue";
 export default {
   name: "MainComp",
   data() {
@@ -39,6 +38,7 @@ export default {
       }
     },
   },
+  components: { CardsComp },
 };
 </script>
 
