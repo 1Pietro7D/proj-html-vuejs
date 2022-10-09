@@ -173,14 +173,15 @@ export const post = [
       },
     ],
   },
+
   {
-    id: 8,
+    id: 4,
     author: "John Down",
-    image: ["blog-56.jpg", "blog-56(1).jpg"],
+    image: ["blog-49.jpg"],
     date: "12/01/2022 14:15:59",
-    categories: ["sports", "business"],
+    categories: ["lifestyles"],
     status: "top",
-    title: "Simple Ways to Have a Pretty Face",
+    title: "The Best Way to Ride a Motorcycle",
     article:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsum modi similique, officiis dolor id blanditiis fuga mollitia nisi, iste numquam doloremque recusandae omnis libero reiciendis vero quis accusantium necessitatibus!",
     comments: [
@@ -202,13 +203,81 @@ export const post = [
     ],
   },
   {
-    id: 4,
+    id: 8,
     author: "John Down",
-    image: ["blog-49.jpg"],
+    image: ["blog-56.jpg", "blog-56(1).jpg"],
     date: "12/01/2022 14:15:59",
-    categories: ["lifestyles", "travel"],
-    status: "top",
-    title: "The Best Way to Ride a Motorcycle",
+    categories: ["sports", "business"],
+    status: "popular",
+    title: "Ranking the greatest player in basketball",
+    article:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsum modi similique, officiis dolor id blanditiis fuga mollitia nisi, iste numquam doloremque recusandae omnis libero reiciendis vero quis accusantium necessitatibus!",
+    comments: [
+      {
+        author: "Davide",
+        date: "12/01/2022 15:30:55",
+        message: "è lui?",
+      },
+      {
+        author: "Adriano",
+        date: "12/01/2022 15:32:55",
+        message: "penso di si",
+      },
+      {
+        author: "Fabiola",
+        date: "12/01/2022 15:37:55",
+        message: "si confermo",
+      },
+    ],
+  },
+  {
+    id: 9,
+    author: "John Down",
+    image: ["blog-57.jpg"],
+    date: "12/01/2022 14:15:59",
+    categories: ["gadgets"],
+    status: "popular",
+    title: "4 Ways to look Coll in Glasses",
+    article:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsum modi similique, officiis dolor id blanditiis fuga mollitia nisi, iste numquam doloremque recusandae omnis libero reiciendis vero quis accusantium necessitatibus!",
+    comments: [
+      {
+        author: "Davide",
+        date: "12/01/2022 15:30:55",
+        message: "ma sono loro?",
+      },
+      {
+        author: "Adriano",
+        date: "12/01/2022 15:32:55",
+        message: "penso di si",
+      },
+      {
+        author: "Fabiola",
+        date: "12/01/2022 15:37:55",
+        message: "si confermo",
+      },
+    ],
+  },
+  {
+    id: 10,
+    author: "John Down",
+    image: ["blog-58.jpg", "blog-58(1).jpg"],
+    date: "12/01/2022 14:15:59",
+    categories: ["travel"],
+    status: "popular",
+    title: "Top Camper Trailer Towing Tips",
+    article:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsum modi similique, officiis dolor id blanditiis fuga mollitia nisi, iste numquam doloremque recusandae omnis libero reiciendis vero quis accusantium necessitatibus!",
+    comments: [],
+  },
+  {
+    id: 11,
+    author: "John Down",
+    image: ["blog-59.jpg"],
+    date: "12/01/2022 14:15:59",
+    categories: ["architecture", "lifestyle"],
+    status: "popular",
+    title: "5 Lovely Walks in New York",
     article:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsum modi similique, officiis dolor id blanditiis fuga mollitia nisi, iste numquam doloremque recusandae omnis libero reiciendis vero quis accusantium necessitatibus!",
     comments: [
@@ -226,6 +295,206 @@ export const post = [
         author: "Fabiola",
         date: "12/01/2022 15:37:55",
         message: "si confermo",
+      },
+    ],
+  },
+  {
+    id: 12,
+    author: "John Down",
+    image: ["blog-65.jpg", "blog-65(1).jpg"],
+    date: "12/01/2022 14:15:59",
+    categories: ["videos"],
+    status: "recent",
+    title: "Main Reason To Stop Texting And Driving",
+    article:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsum modi similique, officiis dolor id blanditiis fuga mollitia nisi, iste numquam doloremque recusandae omnis libero reiciendis vero quis accusantium necessitatibus!",
+    comments: [
+      {
+        author: "Davide",
+        date: "12/01/2022 15:30:55",
+        message: "è lei?",
+      },
+      {
+        author: "Adriano",
+        date: "12/01/2022 15:32:55",
+        message: "penso di si",
+      },
+      {
+        author: "Fabiola",
+        date: "12/01/2022 15:37:55",
+        message: "si confermo",
+      },
+    ],
+  },
+  {
+    id: 13,
+    author: "John Down",
+    image: ["blog-66.jpg", "blog-66(1).jpg"],
+    date: "12/01/2022 14:15:59",
+    categories: ["recipes"],
+    status: "recent",
+    title: "Tips To help You Quickly Prepare your Lunch",
+    article:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsum modi similique, officiis dolor id blanditiis fuga mollitia nisi, iste numquam doloremque recusandae omnis libero reiciendis vero quis accusantium necessitatibus!",
+    comments: [],
+  },
+  {
+    id: 14,
+    author: "John Down",
+    image: ["blog-66.jpg", "blog-66(1).jpg"],
+    date: "12/01/2022 14:15:59",
+    categories: ["tecnology", "business"],
+    status: "recent",
+    title: "Why should I buy a smartwatch",
+    article:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsum modi similique, officiis dolor id blanditiis fuga mollitia nisi, iste numquam doloremque recusandae omnis libero reiciendis vero quis accusantium necessitatibus!",
+    comments: [
+      {
+        author: "Davide",
+        date: "12/01/2022 15:30:55",
+        message: "è lei?",
+      },
+      {
+        author: "Adriano",
+        date: "12/01/2022 15:32:55",
+        message: "penso di si",
+      },
+      {
+        author: "Fabiola",
+        date: "12/01/2022 15:37:55",
+        message: "si confermo",
+      },
+    ],
+  },
+  {
+    id: 15,
+    author: "John Down",
+    image: ["blog-68.jpg"],
+    date: "12/01/2022 14:15:59",
+    categories: ["tecnology", "videos"],
+    status: "recent",
+    title: "The best augmented reality smartglasses",
+    article:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsum modi similique, officiis dolor id blanditiis fuga mollitia nisi, iste numquam doloremque recusandae omnis libero reiciendis vero quis accusantium necessitatibus!",
+    comments: [
+      {
+        author: "Davide",
+        date: "12/01/2022 15:30:55",
+        message: "Sono davvero i nuovi VR?",
+      },
+      {
+        author: "Adriano",
+        date: "12/01/2022 15:32:55",
+        message: "penso di si",
+      },
+      {
+        author: "Fabiola",
+        date: "12/01/2022 15:37:55",
+        message: "si confermo",
+      },
+    ],
+  },
+  {
+    id: 16,
+    author: "John Down",
+    image: ["blog-69.jpg"],
+    date: "12/01/2022 14:15:59",
+    categories: ["recipies"],
+    status: "recent",
+    title: "The best augmented reality smartglasses",
+    article:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsum modi similique, officiis dolor id blanditiis fuga mollitia nisi, iste numquam doloremque recusandae omnis libero reiciendis vero quis accusantium necessitatibus!",
+    comments: [
+      {
+        author: "Davide",
+        date: "12/01/2022 15:30:55",
+        message: "sono con le uova?",
+      },
+      {
+        author: "Adriano",
+        date: "12/01/2022 15:32:55",
+        message: "penso di si",
+      },
+      {
+        author: "Fabiola",
+        date: "12/01/2022 15:37:55",
+        message: "si confermo",
+      },
+    ],
+  },
+  {
+    id: 17,
+    author: "John Down",
+    image: ["blog-54.jpg"],
+    date: "12/01/2022 14:15:59",
+    categories: ["lifestyle", "travel"],
+    status: "recent",
+    title: "How to Make as a Grown-Up",
+    article:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsum modi similique, officiis dolor id blanditiis fuga mollitia nisi, iste numquam doloremque recusandae omnis libero reiciendis vero quis accusantium necessitatibus!",
+    comments: [
+      {
+        author: "Davide",
+        date: "12/01/2022 15:30:55",
+        message: "sono con le uova?",
+      },
+      {
+        author: "Adriano",
+        date: "12/01/2022 15:32:55",
+        message: "penso di si",
+      },
+      {
+        author: "Fabiola",
+        date: "12/01/2022 15:37:55",
+        message: "si confermo",
+      },
+    ],
+  },
+  {
+    id: 18,
+    author: "John Down",
+    image: ["blog-54.jpg"],
+    date: "12/01/2022 16:15:59",
+    categories: ["tecnology"],
+    status: "recent",
+    title: "Lorem ipsum dolor sit, consectetur adipiscing elit",
+    article:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsum modi similique, officiis dolor id blanditiis fuga mollitia nisi, iste numquam doloremque recusandae omnis libero reiciendis vero quis accusantium necessitatibus!",
+    comments: [],
+  },
+  {
+    id: 18,
+    author: "John Down",
+    image: ["our-office-4-square.jpg"],
+    date: "12/01/2022 16:15:59",
+    categories: ["tecnology"],
+    status: "recent",
+    title: "Lorem ipsum dolor sit, consectetur adipiscing elit",
+    article:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsum modi similique, officiis dolor id blanditiis fuga mollitia nisi, iste numquam doloremque recusandae omnis libero reiciendis vero quis accusantium necessitatibus!",
+    comments: [
+      {
+        author: "Davide",
+        date: "12/01/2022 16:30:55",
+        message: "bla vla bla",
+      },
+    ],
+  },
+  {
+    id: 19,
+    author: "John Down",
+    image: ["our-office-5-square.jpg"],
+    date: "12/01/2022 16:15:59",
+    categories: ["architecture"],
+    status: "recent",
+    title: "Lorem ipsum dolor sit, consectetur adipiscing elit",
+    article:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsum modi similique, officiis dolor id blanditiis fuga mollitia nisi, iste numquam doloremque recusandae omnis libero reiciendis vero quis accusantium necessitatibus!",
+    comments: [
+      {
+        author: "Davide",
+        date: "12/01/2022 16:30:55",
+        message: "bla vla bla",
       },
     ],
   },
