@@ -40,6 +40,11 @@
   left: $size;
   transform: translateX(-$size);
 }
+.absolute_0 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .absolute_center {
   /* always into relative container !! */
   $size: 50%;
