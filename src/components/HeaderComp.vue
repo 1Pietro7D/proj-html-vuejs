@@ -39,6 +39,11 @@ export default {
 <style lang="scss" scoped>
 @import "@/assets/style/variables.scss";
 header {
+  .max-container {
+    * {
+      margin: 0 1rem;
+    }
+  }
   .navUtent {
     background-color: $navUtent_theme;
     color: white;
