@@ -5,7 +5,7 @@
         <CardsComp v-for="x in gridBlogElement" :key="x.id" v-bind="x" />
       </div>
     </section>
-    <section class="max-container grid_col_3">
+    <section class="max-container grid_col_3 pad_y_2">
       <div>
         <h3>POPULAR POST</h3>
         <PostElement v-for="x in popularBlogElement" :key="x.id" v-bind="x" />
@@ -30,6 +30,13 @@
         </div>
       </div>
     </section>
+    <aside class="navCategories">
+      <div class="max-container d_flex">
+        <div><font-awesome-icon icon="fa-solid fa-angle-left" /></div>
+        <Nav_comp :listLink="category" :txWhite="true" class="flex_1" />
+        <div><font-awesome-icon icon="fa-solid fa-angle-right" /></div>
+      </div>
+    </aside>
   </main>
 </template>
 
@@ -38,12 +45,13 @@ import { post } from "@/articles.js";
 import { categoriesList } from "@/data.js";
 import CardsComp from "./CardsComp.vue";
 import PostElement from "./PostElement.vue";
+import Nav_comp from "./Nav_comp.vue";
 export default {
   name: "MainComp",
   data() {
     return {
       post,
-      category: categoriesList,
+      category: [],
       gridBlogElement: [],
       featuresBlogElement: [],
       popularBlogElement: [],
@@ -55,6 +63,7 @@ export default {
     this.getFeaturesBlog(post);
     this.getPopularBlog(post);
     this.getRecentBlog(post);
+    this.getCategoryList(categoriesList);
   },
   methods: {
     getGridBlog(post) {
@@ -105,9 +114,15 @@ export default {
         }
       }
     },
+    getCategoryList(category) {
+      for (let index = 0; index < 6; index++) {
+        const element = category[index];
+        this.category.push(element);
+      }
+    },
   },
 
-  components: { CardsComp, PostElement },
+  components: { CardsComp, PostElement, Nav_comp },
 };
 </script>
 
@@ -127,6 +142,16 @@ h3 {
     width: $size;
     height: $size;
     object-fit: cover;
+  }
+}
+
+.navCategories {
+  background-color: $brand_theme;
+  padding: 2rem 0;
+  .max-container {
+    * {
+      margin: 0 1rem;
+    }
   }
 }
 </style>

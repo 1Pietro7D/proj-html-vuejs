@@ -58,17 +58,69 @@ export const navApp = [
   },
 ];
 export const categoriesList = [
-  "gadgets",
-  "photografhy",
-  "lifestyle",
-  "fashion",
-  "recipes",
-  "travel",
-  "business",
-  "architecture",
-  "reviews",
-  "sports",
-  "videos",
-  "technology",
-  "design",
+  {
+    label: "gadgets",
+    active: false,
+    href: "#",
+  },
+  {
+    label: "photografhy",
+    active: false,
+    href: "#",
+  },
+  {
+    label: "lifestyle",
+    active: false,
+    href: "#",
+  },
+  {
+    label: "fashion",
+    active: false,
+    href: "#",
+  },
+  {
+    label: "recipes",
+    active: false,
+    href: "#",
+  },
+  {
+    label: "travel",
+    active: false,
+    href: "#",
+  },
+  {
+    label: "business",
+    active: false,
+    href: "#",
+  },
+  {
+    label: "architecture",
+    active: false,
+    href: "#",
+  },
+  {
+    label: "reviews",
+    active: false,
+    href: "#",
+  },
+  {
+    label: "sports",
+    active: false,
+    href: "#",
+  },
+  {
+    label: "videos",
+    active: false,
+    href: "#",
+  },
+  {
+    label: "technology",
+    active: false,
+    href: "#",
+  },
+  {
+    label: "design",
+    active: false,
+    href: "#",
+  },
 ];

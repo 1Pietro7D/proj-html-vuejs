@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <ul class="d_flex gap_1">
+    <ul class="d_flex gap_1 justify_around">
       <li v-for="(element, index) in listLink" :key="index">
         <a :href="element.href" :class="{ txWhite: txWhite == true }">{{
           element.label
