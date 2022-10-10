@@ -5,7 +5,16 @@
         <CardsComp v-for="x in gridBlogElement" :key="x.id" v-bind="x" />
       </div>
     </section>
-    <section class="max-container grid_col_3"></section>
+    <section class="max-container grid_col_3">
+      <div>
+        <h3>POPULAR POST</h3>
+      </div>
+      <div><h3>RECENT POST</h3></div>
+      <div>
+        <h3>FEATURES POST</h3>
+        <CardsComp v-for="x in featuresBlogElement" :key="x.id" v-bind="x" />
+      </div>
+    </section>
   </main>
 </template>
 
@@ -20,10 +29,12 @@ export default {
       post,
       category: categoriesList,
       gridBlogElement: [],
+      featuresBlogElement: [],
     };
   },
   created() {
     this.getGridBlog(post);
+    this.getFeaturesBlog(post);
   },
   methods: {
     getGridBlog(post) {
@@ -35,6 +46,18 @@ export default {
         if (post[index].status == "top") {
           const element = post[index];
           this.gridBlogElement.push(element);
+        }
+      }
+    },
+    getFeaturesBlog(post) {
+      for (
+        let index = 0;
+        this.featuresBlogElement.length < 1 && index < post.length;
+        index++
+      ) {
+        if (post[index].id == "13") {
+          const element = post[index];
+          this.featuresBlogElement.push(element);
         }
       }
     },
