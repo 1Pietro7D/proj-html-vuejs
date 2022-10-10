@@ -54,6 +54,12 @@
         <!-- SIDE BAR LEFT -->
         <div class="bakeka">
           <ArticleComp v-for="x in popularBlogElement" :key="x.id" v-bind="x" />
+          <div class="pageComp d_flex justify_end">
+            <div><font-awesome-icon icon="fa-solid fa-angle-left" /></div>
+            <div class="pages" v-for="x in 3" :key="x[index]">{{ x }}</div>
+
+            <div><font-awesome-icon icon="fa-solid fa-angle-right" /></div>
+          </div>
         </div>
 
         <!-- SIDE BAR RIGHT -->
@@ -229,5 +235,16 @@ section.bakeka {
       }
     }
   }
+}
+.pageComp {
+  > * {
+    padding: 1rem;
+    border: 1px solid $dark_grey;
+    color: $brand_theme;
+  }
+}
+.pages:nth-child(2) {
+  background-color: $brand_theme;
+  color: white;
 }
 </style>
