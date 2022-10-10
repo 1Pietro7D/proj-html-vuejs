@@ -51,7 +51,12 @@
     <!-- Bakeka section -->
     <section class="bakeka">
       <div class="max-container d_flex pad_y_2">
-        <div class="bakeka"></div>
+        <!-- SIDE BAR LEFT -->
+        <div class="bakeka">
+          <ArticleComp v-for="x in popularBlogElement" :key="x.id" v-bind="x" />
+        </div>
+
+        <!-- SIDE BAR RIGHT -->
         <div class="side-bar">
           <!-- Twitter -->
           <div class="twitter">
@@ -91,6 +96,7 @@ import { categoriesList } from "@/data.js";
 import CardsComp from "./CardsComp.vue";
 import PostElement from "./PostElement.vue";
 import Nav_comp from "./Nav_comp.vue";
+import ArticleComp from "./ArticleComp.vue";
 export default {
   name: "MainComp",
   data() {
@@ -167,7 +173,7 @@ export default {
     },
   },
 
-  components: { CardsComp, PostElement, Nav_comp },
+  components: { CardsComp, PostElement, Nav_comp, ArticleComp },
 };
 </script>
 
