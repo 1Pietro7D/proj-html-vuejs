@@ -52,7 +52,7 @@
     <section class="bakeka">
       <div class="max-container d_flex pad_y_2">
         <!-- SIDE BAR LEFT -->
-        <div class="bakeka">
+        <div class="bakeka d_column">
           <ArticleComp v-for="x in popularBlogElement" :key="x.id" v-bind="x" />
           <div class="pageComp d_flex justify_end">
             <div><font-awesome-icon icon="fa-solid fa-angle-left" /></div>
@@ -217,8 +217,6 @@ section.bakeka {
 
   .bakeka {
     width: 75%;
-
-    height: 100px;
     margin-left: 1rem;
     margin-right: 1rem;
   }
