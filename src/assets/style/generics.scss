@@ -21,11 +21,23 @@
 .ml_1 {
   margin-left: 1rem;
 }
+.mr_1 {
+  margin-right: 1rem;
+}
 .mb_1 {
   margin-bottom: 1rem;
 }
 
 /* PADDING (I decimali sono con 05, al momento gli unici) */
+.pad_bot_1 {
+  padding-bottom: 1rem !important;
+}
+.pad_bot_2 {
+  padding-bottom: 2rem !important;
+}
+.pad_top_1 {
+  padding-top: 1rem !important;
+}
 .pad_0 {
   padding: 0 !important;
 }
