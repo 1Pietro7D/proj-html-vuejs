@@ -341,7 +341,7 @@ export const post = [
   {
     id: 14,
     author: "John Down",
-    image: ["blog-66.jpg", "blog-66(1).jpg"],
+    image: ["blog-67.jpg", "blog-67(1).jpg"],
     date: "12/01/2022 14:15:59",
     categories: ["tecnology", "business"],
     status: "recent",
