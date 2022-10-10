@@ -1,8 +1,9 @@
 <template>
   <div class="cont relative">
     <div class="relative flex_col_rev gap_05">
+      <p class="article">{{ shortArticle }}...</p>
       <h3 class="">{{ title }}</h3>
-      <p>{{ categories[0] }}</p>
+      <p class="category">{{ categories[0] }}</p>
     </div>
     <img
       class="absolute_0"
@@ -25,29 +26,50 @@ export default {
     categories: Array,
   },
   data() {
-    return {};
+    return {
+      shortArticle: "",
+    };
+  },
+  created() {
+    this.getShortArticle(this.article);
+  },
+  methods: {
+    getShortArticle(string) {
+      for (let index = 0; index <= 70; index++) {
+        this.shortArticle += string.charAt(index);
+      }
+      console.log(this.shortArticle);
+    },
   },
 };
 </script>
 
 <style lang="scss" scoped>
 @import "@/assets/style/variables.scss";
+$pad: 1.5rem;
+$mar: 1rem;
+$size: 18vw;
 .cont {
-  $pad: 2rem;
-  $mar: 1rem;
   background-color: aqua;
-  height: 13vw;
+  height: $size;
+  max-height: 200px;
   margin: $mar;
   div {
     background-color: rgba($color: #000000, $alpha: 0.5);
     color: white;
-    height: calc(13vw - (($pad) * 2));
+    height: calc($size - (($pad) * 2));
+    max-height: calc(200px - (($pad) * 2));
     z-index: 1;
     padding: $pad;
+
+    .article {
+      display: none;
+      color: $dark_grey;
+    }
     h3 {
       font-weight: bolder;
     }
-    p {
+    .category {
       padding: 0.5rem;
       text-transform: uppercase;
       background-color: $brand_theme;
@@ -61,6 +83,19 @@ export default {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+}
+.cont:hover {
+  scale: 1.1;
+  div {
+    border: 4px solid white;
+    box-shadow: 5px 5px 5px #888888;
+    box-sizing: content-box;
+    height: calc($size - (($pad) * 2) - 8px);
+    max-height: calc(200px - (($pad) * 2) - 8px);
+    .article {
+      display: initial;
+    }
   }
 }
 </style>
