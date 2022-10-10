@@ -1,10 +1,13 @@
 <template>
   <main>
+    <!-- section grid -->
     <section class="blog_grid">
       <div class="max-container grid_col_3">
         <CardsComp v-for="x in gridBlogElement" :key="x.id" v-bind="x" />
       </div>
     </section>
+    <!-- /section grid -->
+    <!-- Popular recent post section -->
     <section class="max-container grid_col_3 pad_y_2">
       <div>
         <h3>POPULAR POST</h3>
@@ -30,13 +33,55 @@
         </div>
       </div>
     </section>
+    <!-- Popular recent post section -->
+    <!-- Nav category -->
     <aside class="navCategories">
       <div class="max-container d_flex">
         <div><font-awesome-icon icon="fa-solid fa-angle-left" /></div>
-        <Nav_comp :listLink="category" :txWhite="true" class="flex_1" />
+        <Nav_comp
+          :listLink="category"
+          :txWhite="true"
+          class="flex_1"
+          :paddingXl="true"
+        />
         <div><font-awesome-icon icon="fa-solid fa-angle-right" /></div>
       </div>
     </aside>
+    <!-- /Nav category -->
+    <!-- Bakeka section -->
+    <section class="bakeka">
+      <div class="max-container d_flex pad_y_2">
+        <div class="bakeka"></div>
+        <div class="side-bar">
+          <!-- Twitter -->
+          <div class="twitter">
+            <h3 class="pad_y_1">latest from twitter</h3>
+            <div class="d_flex mb_1">
+              <font-awesome-icon icon="fa-brands fa-twitter" />
+              <div class="ml_1">
+                <p>
+                  If you have any suggestions for the next updates, lets us
+                  know.
+                </p>
+                <span>01:05 PM Sep 18th</span>
+              </div>
+            </div>
+            <div class="d_flex">
+              <font-awesome-icon icon="fa-brands fa-twitter" />
+              <div class="ml_1">
+                <p>
+                  We have just update Porto Admin. Check the changelog for more
+                  information.
+                </p>
+                <span>01:04 PM Sep 18th</span>
+              </div>
+            </div>
+          </div>
+          <!-- Instagram -->
+        </div>
+      </div>
+    </section>
+    <!-- Bakeka section -->
   </main>
 </template>
 
@@ -134,6 +179,7 @@ export default {
 }
 h3 {
   padding: 1rem;
+  text-transform: uppercase;
 }
 .author {
   margin: 0 0.5rem;
@@ -147,10 +193,34 @@ h3 {
 
 .navCategories {
   background-color: $brand_theme;
-  padding: 2rem 0;
+  padding: 2.5rem 0;
   .max-container {
     * {
       margin: 0 1rem;
+    }
+  }
+}
+section.bakeka {
+  margin: 0 1rem;
+
+  .bakeka {
+    width: 75%;
+
+    height: 100px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .side-bar {
+    width: 25%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    .twitter {
+      p {
+        color: $dark_grey;
+      }
+      span {
+        color: $brand_theme;
+      }
     }
   }
 }
