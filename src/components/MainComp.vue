@@ -10,7 +10,10 @@
         <h3>POPULAR POST</h3>
         <PostElement v-for="x in popularBlogElement" :key="x.id" v-bind="x" />
       </div>
-      <div><h3>RECENT POST</h3></div>
+      <div>
+        <h3>RECENT POST</h3>
+        <PostElement v-for="x in recentBlogElement" :key="x.id" v-bind="x" />
+      </div>
       <div>
         <h3>FEATURES POST</h3>
         <CardsComp v-for="x in featuresBlogElement" :key="x.id" v-bind="x" />
@@ -34,12 +37,14 @@ export default {
       gridBlogElement: [],
       featuresBlogElement: [],
       popularBlogElement: [],
+      recentBlogElement: [],
     };
   },
   created() {
     this.getGridBlog(post);
     this.getFeaturesBlog(post);
     this.getPopularBlog(post);
+    this.getRecentBlog(post);
   },
   methods: {
     getGridBlog(post) {
@@ -75,6 +80,18 @@ export default {
         if (post[index].status == "popular") {
           const element = post[index];
           this.popularBlogElement.push(element);
+        }
+      }
+    },
+    getRecentBlog(post) {
+      for (
+        let index = 0;
+        this.recentBlogElement.length < 5 && index < post.length;
+        index++
+      ) {
+        if (post[index].status == "recent") {
+          const element = post[index];
+          this.recentBlogElement.push(element);
         }
       }
     },
