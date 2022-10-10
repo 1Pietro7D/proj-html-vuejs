@@ -18,20 +18,6 @@ export default {
     date: String,
     article: String,
   },
-  data() {
-    return {
-      images: this.image,
-      imageRev: [],
-    };
-  },
-  created() {
-    this.getImageRev(this.images);
-  },
-  methods: {
-    getImageRev(image) {
-      this.imageRev = image.reverse();
-    },
-  },
 };
 </script>
 
