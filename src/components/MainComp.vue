@@ -90,4 +90,7 @@ export default {
   padding: 2rem 0;
   background-color: $grey_theme;
 }
+h3 {
+  padding: 1rem;
+}
 </style>

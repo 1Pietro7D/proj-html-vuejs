@@ -1,7 +1,7 @@
 <template>
-  <div class="d_flex">
+  <div class="d_flex pad_05">
     <img :src="require(`../assets/img/${image[0]}`)" alt="" />
-    <div>
+    <div class="pad_05">
       <h4>{{ title }}</h4>
       <p>{{ date }}</p>
     </div>
@@ -37,10 +37,13 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/assets/style/variables.scss";
-img {
-  $size: 70px;
-  width: $size;
-  height: $size;
-  object-fit: cover;
+.d_flex {
+  margin: 0 0.5rem;
+  img {
+    $size: 70px;
+    width: $size;
+    height: $size;
+    object-fit: cover;
+  }
 }
 </style>
