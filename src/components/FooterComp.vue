@@ -2,6 +2,10 @@
   <footer>
     <div class="getInTouch">
       <div class="max-container">
+        <div id="touch-cont">
+          <div class="triangle"></div>
+          <div id="get-in-touch">get in touch</div>
+        </div>
         <div class="about-blog">
           <h4>About the blog</h4>
           <p>
@@ -151,5 +155,12 @@ footer {
       }
     }
   }
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-width: 0 0 30px 15px;
+  border-color: transparent transparent #005580 transparent;
+  border-style: solid;
 }
 </style>
