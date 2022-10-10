@@ -401,7 +401,7 @@ export const post = [
     date: "12/01/2022 14:15:59",
     categories: ["recipies"],
     status: "recent",
-    title: "The best augmented reality smartglasses",
+    title: "12 Healthiest Foods to Eat for Breakfast",
     article:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsum modi similique, officiis dolor id blanditiis fuga mollitia nisi, iste numquam doloremque recusandae omnis libero reiciendis vero quis accusantium necessitatibus!",
     comments: [
