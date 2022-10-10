@@ -5,6 +5,7 @@
         <CardsComp v-for="x in gridBlogElement" :key="x.id" v-bind="x" />
       </div>
     </section>
+    <section class="max-container grid_col_3"></section>
   </main>
 </template>
 
