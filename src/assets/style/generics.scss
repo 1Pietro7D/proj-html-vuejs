@@ -18,70 +18,76 @@
 .m_1 {
   margin: 1rem;
 }
+.ml_1 {
+  margin-left: 1rem;
+}
+.mb_1 {
+  margin-bottom: 1rem;
+}
 
 /* PADDING (I decimali sono con 05, al momento gli unici) */
 .pad_0 {
-  padding: 0;
+  padding: 0 !important;
 }
 .pad_05 {
-  padding: 0.5rem;
+  padding: 0.5rem !important;
 }
 .pad_1 {
-  padding: 1rem;
+  padding: 1rem !important;
 }
 .pad_2 {
-  padding: 2rem;
+  padding: 2rem !important;
 }
 .pad_3 {
-  padding: 3rem;
+  padding: 3rem !important;
 }
 .pad_4 {
-  padding: 4rem;
+  padding: 4rem !important;
 }
 .pad_5 {
-  padding: 5rem;
+  padding: 5rem !important;
 }
 .pad_y_0 {
-  padding: 0rem;
+  padding: 0rem !important;
 }
 .pad_y_05 {
-  padding: 0.5rem 0;
+  padding: 0.5rem 0 !important;
 }
 .pad_y_1 {
-  padding: 1rem 0;
+  padding: 1rem 0 !important;
 }
 .pad_y_2 {
-  padding: 2rem 0;
+  padding: 2rem 0 !important;
 }
 .pad_y_3 {
-  padding: 3rem 0;
+  padding: 3rem 0 !important;
 }
 .pad_y_4 {
-  padding: 4rem 0;
+  padding: 4rem 0 !important;
 }
 .pad_y_5 {
-  padding: 5rem 0;
+  padding: 5rem 0 !important;
 }
 .pad_x_0 {
-  padding: 0rem;
+  padding: 0rem !important;
 }
 .pad_x_05 {
-  padding: 0 0.5rem;
+  padding: 0 0.5rem !important;
 }
 .pad_x_1 {
-  padding: 0 1rem;
+  padding: 0 1rem !important;
 }
 .pad_x_2 {
-  padding: 0 2rem;
+  padding: 0 2rem !important;
 }
 .pad_x_3 {
-  padding: 0 3rem;
+  padding: 0 3rem !important;
 }
 .pad_x_4 {
-  padding: 0 4rem;
+  padding: 0 4rem !important;
 }
 .pad_x_5 {
-  padding: 0 5rem;
+  padding: 0 5rem !important;
 }
 
 /* /padding */
