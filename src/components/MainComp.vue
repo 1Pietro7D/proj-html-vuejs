@@ -8,11 +8,13 @@
     <section class="max-container grid_col_3">
       <div>
         <h3>POPULAR POST</h3>
+        <PostElement v-for="x in popularBlogElement" :key="x.id" v-bind="x" />
       </div>
       <div><h3>RECENT POST</h3></div>
       <div>
         <h3>FEATURES POST</h3>
         <CardsComp v-for="x in featuresBlogElement" :key="x.id" v-bind="x" />
+        <h3>FEATURED AUTHOR</h3>
       </div>
     </section>
   </main>
@@ -22,6 +24,7 @@
 import { post } from "@/articles.js";
 import { categoriesList } from "@/data.js";
 import CardsComp from "./CardsComp.vue";
+import PostElement from "./PostElement.vue";
 export default {
   name: "MainComp",
   data() {
@@ -30,11 +33,13 @@ export default {
       category: categoriesList,
       gridBlogElement: [],
       featuresBlogElement: [],
+      popularBlogElement: [],
     };
   },
   created() {
     this.getGridBlog(post);
     this.getFeaturesBlog(post);
+    this.getPopularBlog(post);
   },
   methods: {
     getGridBlog(post) {
@@ -61,8 +66,21 @@ export default {
         }
       }
     },
+    getPopularBlog(post) {
+      for (
+        let index = 0;
+        this.popularBlogElement.length < 5 && index < post.length;
+        index++
+      ) {
+        if (post[index].status == "popular") {
+          const element = post[index];
+          this.popularBlogElement.push(element);
+        }
+      }
+    },
   },
-  components: { CardsComp },
+
+  components: { CardsComp, PostElement },
 };
 </script>
 
