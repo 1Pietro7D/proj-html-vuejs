@@ -18,6 +18,16 @@
         <h3>FEATURES POST</h3>
         <CardsComp v-for="x in featuresBlogElement" :key="x.id" v-bind="x" />
         <h3>FEATURED AUTHOR</h3>
+        <div class="author d_flex pad_05">
+          <img src="@/assets/img/avatar.jpg" alt="author" />
+          <div class="pad_05">
+            <h4>John Doe</h4>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Suscipit, assume
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -109,5 +119,14 @@ export default {
 }
 h3 {
   padding: 1rem;
+}
+.author {
+  margin: 0 0.5rem;
+  img {
+    $size: 120px;
+    width: $size;
+    height: $size;
+    object-fit: cover;
+  }
 }
 </style>
